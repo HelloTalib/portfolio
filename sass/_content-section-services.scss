@@ -1,0 +1,14 @@
+.content-section-services{
+  background: $secondaryColor;
+  color: $white;
+  .service-icon {
+    background-color: $white;
+    color: $secondaryColor;
+    height: 7rem;
+    width: 7rem;
+    display: block;
+    line-height: 7.5rem;
+    font-size: 2.25rem;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+}

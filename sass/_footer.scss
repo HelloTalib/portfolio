@@ -1,0 +1,31 @@
+footer {
+  padding: 50px 0;
+  p {
+    font-size: 14px;
+
+    margin: 0;
+  }
+}
+
+// Scroll to top button
+#scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+
+  display: none;
+
+  text-align: center;
+
+  color: $orange;
+
+  line-height: 45px;
+  font-size: 35px;
+  &:focus,
+  &:hover {
+    color: $gray-500;
+  }
+  i {
+    font-weight: 800;
+  }
+}

@@ -1,0 +1,98 @@
+.header-section{
+    display: table;
+
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+
+    color: $white;
+    //background: linear-gradient(90deg, fade-out($white, 0.9) 0%, fade-out($white, 0.9) 100%), url('../img/min/header-bg.jpg');
+    //background-position: center center;
+    //background-repeat: no-repeat;
+    //background-size: cover;
+    //@include background-cover;
+    background: $primaryColor;
+
+    .header-logo{
+      width: 90%;
+    }
+
+    .intro-body {
+      display: table-cell;
+      vertical-align: middle;
+      .header-text {
+        font-size: 40px;
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    @media (max-width: 1280px) {
+      height: 100%;
+      .intro-body {
+        .header-text {
+          font-size: 35px;
+        }
+      }
+    }
+
+    @media (max-width: 992px) {
+      height: 100%;
+      padding: 100px 0 0 0;
+      .intro-body {
+        .header-text {
+          font-size: 38px;
+        }
+        .header-logo{
+          display: none;
+        }
+      }
+    }
+
+    @media(max-width:768px) {
+      padding: 100px 0 0 0;
+      .intro-body {
+        .header-text {
+          font-size: 32px;
+        }
+      }
+    }
+
+    @media (max-width: 480px) {
+      padding: 100px 0 0 0;
+      height: 250px;
+      .intro-body {
+        .header-text {
+          font-size: 30px;
+        }
+      }
+    }
+
+    blink {
+      -webkit-animation: 2s linear infinite condemned_blink_effect; // for android
+      animation: 2s linear infinite condemned_blink_effect;
+    }
+
+    @-webkit-keyframes condemned_blink_effect { // for android
+      0% {
+        visibility: hidden;
+      }
+      50% {
+        visibility: hidden;
+      }
+      100% {
+        visibility: visible;
+      }
+    }
+    @keyframes condemned_blink_effect {
+      0% {
+        visibility: hidden;
+      }
+      50% {
+        visibility: hidden;
+      }
+      100% {
+        visibility: visible;
+      }
+    }
+}

@@ -1,0 +1,100 @@
+#mainNav {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid fade-out(white, .7);
+  background: $gray-700;
+
+  .navbar-toggler {
+    font-size: 14px;
+    padding: 11px;
+    color: white;
+    //border: 1px solid white;
+  }
+  .navbar-brand {
+    .nav-logo{
+      height: 50px;
+    }
+    font-weight: 700;
+  }
+
+  a {
+    color: white;
+  }
+
+  .navbar-nav {
+    .nav-item {
+      -webkit-transition: background 0.3s ease-in-out;
+      -moz-transition: background 0.3s ease-in-out;
+      transition: background 0.3s ease-in-out;
+      &:hover {
+        color: fade(white, 80%);
+        outline: none;
+        background-color: transparent;
+      }
+      &:active,
+      &:focus {
+        outline: none;
+        background-color: transparent;
+      }
+    }
+  }
+
+  @media(max-width:992px) {
+    //background: $primaryColor;
+    .navbar-collapse{
+      width: 100%;
+      .navbar-brand {
+        .nav-logo{
+          height: 40px;
+        }
+      }
+      .navbar-nav {
+        .nav-link {
+          text-align: center;
+        }
+        .nav-link:before {
+          content: "< ";
+        }
+        .nav-link:after {
+          content: " />";
+        }
+      }
+    }
+  }
+
+  @media(min-width:992px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    -webkit-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    -moz-transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
+    letter-spacing: 1px;
+
+    border-bottom: none;
+    background: transparent;
+
+    &.navbar-shrink {
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      border-bottom: 1px solid fade-out(white, .7);
+      background: $secondaryColor;
+    }
+    .nav-link.active {
+      outline: none;
+      //background-color: rgba(white, .3);
+
+      &:hover {
+        color: white;
+      }
+    }
+    .nav-link.active:before {
+      content: "< ";
+    }
+    .nav-link.active:after {
+      content: " />";
+    }
+
+  }
+}

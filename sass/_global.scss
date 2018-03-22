@@ -1,0 +1,125 @@
+body {
+  @include body-font;
+
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  color: $white;
+  overflow-x: hidden;
+  //background-color: $black;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+// Custom Button Size
+.btn-xl {
+  padding: 1.25rem 2.5rem;
+}
+
+// Content Section
+.content-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+  .text-title{
+    font-weight: 700;
+    font-size: 15px;
+    color: $orange;
+  }
+
+  .content-header{
+    font-weight: 700;
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 992px) {
+  .content-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .text-title {
+      font-size: 12px;
+    }
+    .content-header{
+      font-weight: 700;
+      font-size: 15px;
+    }
+  }
+}
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0 0 35px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+
+  margin: 0 0 25px;
+  @media(min-width: 768px) {
+    font-size: 18px;
+    line-height: 1.6;
+
+    margin: 0 0 35px;
+  }
+}
+
+a{
+  color: $gray-400;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  &:focus,
+  &:hover{
+    color: $secondaryColor;
+    text-decoration: none;
+  }
+}
+
+.text-faded {
+  color: fade-out($white, 0.3);
+}
+
+.list-social-icons {
+  a {
+    color: $gray-700;
+    &:hover {
+      color: $secondaryColor;
+    }
+    .fa-lg {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+.list-icons {
+  font-size: 5.5rem;
+  .list-inline-item i {
+    &:hover {
+      color: $secondaryColor;
+    }
+  }
+}
