@@ -233,6 +233,12 @@ a {
     height: 60px;
     width: 60%; }
 
+.content-section-team {
+  background: #e9ecef;
+  color: #3c3c3c; }
+  .content-section-team .company-icon {
+    width: 70%; }
+
 .content-section-connects {
   background: #3c3c3c;
   color: #fff; }
