@@ -6,3 +6,17 @@
     width: 60%;
   }
 }
+
+.content-section-team{
+  background: $gray-200;
+  color: $primaryColor;
+  .company-icon{
+    height: 60px;
+    width: 50%;
+  }
+  @media (max-width: 480px) {
+    .company-icon{
+      height: 50px;
+    }
+  }
+}
