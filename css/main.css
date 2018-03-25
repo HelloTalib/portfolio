@@ -238,9 +238,9 @@ a {
 .content-section-team {
   background: #e9ecef;
   color: #3c3c3c; }
-  .content-section-team .company-icon {
-    height: 60px;
-    width: 50%; }
+  @media (max-width: 768px) {
+    .content-section-team .company-icon {
+      height: 60px; } }
   @media (max-width: 480px) {
     .content-section-team .company-icon {
       height: 50px; } }
