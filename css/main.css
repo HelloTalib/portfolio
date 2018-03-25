@@ -37,7 +37,9 @@ html {
       font-size: 12px; }
     .content-section .content-header {
       font-weight: 700;
-      font-size: 15px; } }
+      font-size: 15px; }
+    .content-section .text-desc {
+      font-size: 12px; } }
 
 h1,
 h2,
@@ -237,7 +239,11 @@ a {
   background: #e9ecef;
   color: #3c3c3c; }
   .content-section-team .company-icon {
-    width: 70%; }
+    height: 60px;
+    width: 50%; }
+  @media (max-width: 480px) {
+    .content-section-team .company-icon {
+      width: 70%; } }
 
 .content-section-connects {
   background: #3c3c3c;
