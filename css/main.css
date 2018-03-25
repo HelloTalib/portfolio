@@ -243,7 +243,7 @@ a {
     width: 50%; }
   @media (max-width: 480px) {
     .content-section-team .company-icon {
-      width: 70%; } }
+      height: 50px; } }
 
 .content-section-connects {
   background: #3c3c3c;
