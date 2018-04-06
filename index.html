@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" type="image/png" href="img/logo.png"/>
-    <title>Paul Cedo - Official Portfolio Website</title>
+    <title>Paul Cedo - A Freelance Full Stack Web Developer</title>
 
     <meta property="og:image" content="http://paulfolio.online/img/min/logo.png">
     <meta property="og:image:type" content="image/png">
@@ -14,7 +14,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://paulfolio.online"/>
     <meta property="og:title" content="Paul Cedo" />
-    <meta property="og:description" content="Official Portfolio Website" />
+    <meta property="og:description" content="A Freelance Full Stack Web Developer" />
 
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="/vendor/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
@@ -100,6 +100,25 @@
 
 <!-- Footer -->
 <div w3-include-html="footer.html"></div>
+
+<!-- FB Messenger -->
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+     page_id="825989147413758"
+     theme_color="#6699cc"
+     logged_in_greeting="Hi! How can i help you?"
+     logged_out_greeting="Hi! How can i help you?">
+</div>
 
 <!-- Scroll to Top Button-->
 <a class="scroll-to-top js-scroll-trigger" id="scroll-to-top" href="#page-top">
